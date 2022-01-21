@@ -88,7 +88,7 @@ int execute_command(char *command) {
         }
 
         // STDERR output
-        fprintf(stderr, "+ completed '%s' [%d]\n", original_command, ret_val);
+        fprintf(stdout, "+ completed '%s' [%d]\n", original_command, ret_val);
 
         // Free Memory and Return
         free(command_array);
