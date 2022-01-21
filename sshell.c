@@ -7,7 +7,6 @@ int main(void) {
 
         while (1) {
                 char *nl;
-                int retval;
 
                 /* Print prompt */
                 printf("sshell$ ");
@@ -36,7 +35,7 @@ int main(void) {
                 }
 
                 /* Execute command */
-                retval = execute_command(cmd);
+                execute_command(cmd);
         }
 
         return EXIT_SUCCESS;
