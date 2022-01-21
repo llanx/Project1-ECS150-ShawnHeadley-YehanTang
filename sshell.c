@@ -50,6 +50,11 @@ int execute_command(char *command) {
         int num_args = 0;
         int has_redirect = 0;
 
+	// Check if input is empty
+        if (strcmp(command, "") == 0) {
+                return 0;
+        }
+
         // Duplicate original command for output.
         original_command = (char *)malloc(sizeof(char) * (strlen(command) + 1));
         strcpy(original_command, command);
